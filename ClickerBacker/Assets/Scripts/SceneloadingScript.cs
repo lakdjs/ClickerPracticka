@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class SceneloadingScript : MonoBehaviour
 {
     [SerializeField] private Button _button;
-
     public void SceneLoadMethod(string sceneName)
     {
         SceneManager.LoadScene(sceneName);

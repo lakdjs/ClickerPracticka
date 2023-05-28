@@ -27,7 +27,7 @@ public class BakeScript : MonoBehaviour
         {
             _button.interactable = false;
         }
-        if(Input.GetKey(KeyCode.W))
+        if(Input.GetKeyDown(KeyCode.W))
         {
             Debug.Log(_cake[0].name);
             Debug.Log(_cake[1].name);
