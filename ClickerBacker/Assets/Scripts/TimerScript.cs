@@ -9,21 +9,20 @@ public class TimerScript : MonoBehaviour
     [SerializeField] private Image _timeBar;
     private int _maxTime;
     private float _timeLeft;
-    private void Start()
+    public void Start()
     {
-        _maxTime = GetComponent<Orders.OrderScript>().Time;
-        _timeLeft = _maxTime;
     }
     void Update()
     {
         
     }
-    private void Timer()
+    public void Timer()
     {
-        if(_timeLeft > 0)
+        
+        if (_timeLeft > 0)
         {
             _timeLeft -= Time.deltaTime;
-            _timeBar.fillAmount = _timeLeft / _maxTime;
+            _timeBar.fillAmount = (float)GetComponent<Orders.OrderScript>().Time / GetComponent<Orders.OrderScript>().Time; 
         }
         else
         {
