@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Orders
 {
@@ -10,6 +11,8 @@ namespace Orders
         [SerializeField] private int _coindsAdd;
         [SerializeField] private int _coinsSub;
         [SerializeField] private int _clicksQuantity;
+        private TimerScript _timerScript;
+        [SerializeField] private BakeScript _bakeScript;
         public enum OrderDone
         {
             Win,
@@ -49,10 +52,12 @@ namespace Orders
         public Glaze GlazeType { get; private set; }
         public Cake CakeType { get; private set; }
         public Decoration DecorationType { get; private set; }
+        public OrderDone? OrderResult { get; set; }
 
 
         private void Start()
         {
+            _timerScript = GetComponent<TimerScript>();
         }
         void Update()
         {
@@ -64,12 +69,27 @@ namespace Orders
             {
                 Debug.Log($"ordertype-{OrderType},time-{Time},coinsadd-{CoinsAdd},coinssub-{CoinsSub},glazetype-{GlazeType},caketype-{CakeType},decorationtype-{DecorationType}");
             }
-            if(Input.GetKeyDown(KeyCode.Y))
+            if (Input.GetKeyDown(KeyCode.Y))
             {
-                GetComponent<TimerScript>().Start();
-                GetComponent<TimerScript>().Timer();
-                Debug.Log("est");
+                _timerScript._maxTime = Time;
+                _timerScript._timeLeft = Time;
+                _timerScript.TimerOnOff = true;
             }
+           if(_timerScript._timeLeft <= 0)
+           {
+               if (GlazeType.ToString() == _bakeScript.Cake[0].name&&
+                   CakeType.ToString()==_bakeScript.Cake[1].name&&
+                   DecorationType.ToString()==_bakeScript.Cake[2].name)
+               {
+                   OrderResult = (OrderDone)0;
+                   Debug.Log(OrderResult);
+               }
+               else
+               {
+                   OrderResult = (OrderDone)1;
+                   Debug.Log(OrderResult);
+               }
+           }
         }
         private void NewOrder()
         {

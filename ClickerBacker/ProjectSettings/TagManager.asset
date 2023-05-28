@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Component1
   - Water
   - UI
-  - 
-  - 
+  - Component2
+  - Component3
   - 
   - 
   - 
