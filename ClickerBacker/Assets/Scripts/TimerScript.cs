@@ -7,15 +7,16 @@ using UnityEngine.SceneManagement;
 public class TimerScript : MonoBehaviour
 {
     [SerializeField] private Image _timeBar;
-    [SerializeField] private float _maxTime;
+    private int _maxTime;
     private float _timeLeft;
     private void Start()
     {
+        _maxTime = GetComponent<Orders.OrderScript>().Time;
         _timeLeft = _maxTime;
     }
     void Update()
     {
-        Timer();
+        
     }
     private void Timer()
     {
