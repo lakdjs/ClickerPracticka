@@ -13,6 +13,8 @@ namespace Orders
         [SerializeField] private int _clicksQuantity;
         private TimerScript _timerScript;
         [SerializeField] private BakeScript _bakeScript;
+        [SerializeField] private Button[] _buttons;
+        public bool IsWatched = false;
         public enum OrderDone
         {
             Win,
@@ -57,13 +59,26 @@ namespace Orders
 
         private void Start()
         {
-            _timerScript = GetComponent<TimerScript>();
+            _timerScript = GetComponent<TimerScript>();        
         }
         void Update()
         {
+            if(Input.GetKeyDown(KeyCode.T))
+            {
+                Debug.Log(_timerScript.TimerOnOff);
+            }
             if(Input.GetKeyDown(KeyCode.E))
             {
+                _timerScript.TimerOnOff = true;
                 NewOrder();
+                _timerScript._maxTime = Time;
+                _timerScript._timeLeft = Time;
+                _bakeScript.SetBaking = false;
+                IsWatched = false;
+                for(int i = 0; i<_buttons.Length; i++)
+                {
+                    _buttons[i].interactable = true;
+                }
             }
             if(Input.GetKeyDown(KeyCode.H))
             {
@@ -71,25 +86,34 @@ namespace Orders
             }
             if (Input.GetKeyDown(KeyCode.Y))
             {
-                _timerScript._maxTime = Time;
-                _timerScript._timeLeft = Time;
-                _timerScript.TimerOnOff = true;
+                Debug.Log(PlayerPrefs.GetInt("Coins"));
+                Debug.Log("coins");
             }
-           if(_timerScript._timeLeft <= 0)
+           if(_timerScript._timeLeft <= 0&&_timerScript.TimerOnOff&&IsWatched == false)
            {
-               if (GlazeType.ToString() == _bakeScript.Cake[0].name&&
-                   CakeType.ToString()==_bakeScript.Cake[1].name&&
-                   DecorationType.ToString()==_bakeScript.Cake[2].name)
-               {
+                if (_bakeScript.Cake[0] is null)
+                {
+                    for (int i = 0; i < _bakeScript.Cake.Length; i++)
+                    {
+                        _bakeScript.Cake[i] = new GameObject();
+                    }
+                }
+                if (GlazeType.ToString() == _bakeScript.Cake[0].tag.ToString()&&
+                   CakeType.ToString()==_bakeScript.Cake[1].tag.ToString()&&
+                   DecorationType.ToString()==_bakeScript.Cake[2].tag.ToString())
+                {
                    OrderResult = (OrderDone)0;
-                   Debug.Log(OrderResult);
-               }
-               else
-               {
+                    PlayerPrefs.SetInt("Coins",PlayerPrefs.GetInt("Coins") + CoinsAdd);
+                }
+                else
+                {
                    OrderResult = (OrderDone)1;
-                   Debug.Log(OrderResult);
-               }
-           }
+                    PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") - CoinsSub);
+                }
+                IsWatched = true;
+                _timerScript.TimerOnOff = false;
+                Debug.Log(OrderResult);
+            }
         }
         private void NewOrder()
         {

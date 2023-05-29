@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 237476914}
   m_Layer: 3
   m_Name: Component1
-  m_TagString: Untagged
+  m_TagString: Component1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 440975490}
   m_Layer: 6
   m_Name: Component2
-  m_TagString: Untagged
+  m_TagString: Component2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1125,7 +1125,9 @@ MonoBehaviour:
   - {fileID: 1422231188}
   - {fileID: 440975488}
   - {fileID: 1175079519}
+  _timerScript: {fileID: 748336569}
   _button: {fileID: 720800438}
+  SetBaking: 0
 --- !u!1 &748336564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,7 +1142,6 @@ GameObject:
   - component: {fileID: 748336565}
   - component: {fileID: 748336569}
   - component: {fileID: 748336570}
-  - component: {fileID: 748336571}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1271,31 +1272,15 @@ MonoBehaviour:
   _coinsSub: 25
   _clicksQuantity: 0
   _bakeScript: {fileID: 720800441}
---- !u!114 &748336571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748336564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f863fdd748ffc845a7dc2f0f114a5b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _components1:
-  - {fileID: 755081388}
-  - {fileID: 788159733}
-  - {fileID: 1179381388}
-  _components2:
-  - {fileID: 237476912}
-  - {fileID: 1779859154}
-  - {fileID: 949377146}
-  _components3:
-  - {fileID: 1422231188}
-  - {fileID: 440975488}
-  - {fileID: 1175079519}
-  _button: {fileID: 720800438}
+  _buttons:
+  - {fileID: 2099510827}
+  - {fileID: 1937996629}
+  - {fileID: 1184005660}
+  - {fileID: 761241919}
+  - {fileID: 1864153708}
+  - {fileID: 1267071500}
+  - {fileID: 720800438}
+  IsWatched: 0
 --- !u!1 &755081388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,7 +1294,7 @@ GameObject:
   - component: {fileID: 755081390}
   m_Layer: 3
   m_Name: Component1
-  m_TagString: Untagged
+  m_TagString: Component1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1506,7 +1491,7 @@ GameObject:
   - component: {fileID: 788159735}
   m_Layer: 6
   m_Name: Component2
-  m_TagString: Untagged
+  m_TagString: Component2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1580,7 +1565,7 @@ GameObject:
   - component: {fileID: 852716449}
   - component: {fileID: 852716450}
   m_Layer: 5
-  m_Name: Component3
+  m_Name: DecorationComponents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1629,6 +1614,7 @@ MonoBehaviour:
   - {fileID: 1422231188}
   - {fileID: 440975488}
   - {fileID: 1175079519}
+  _timerScript: {fileID: 748336569}
 --- !u!1 &949377146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,7 +1628,7 @@ GameObject:
   - component: {fileID: 949377148}
   m_Layer: 7
   m_Name: Component3
-  m_TagString: Untagged
+  m_TagString: Component3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2006,7 +1992,7 @@ GameObject:
   - component: {fileID: 1175079521}
   m_Layer: 7
   m_Name: Component3
-  m_TagString: Untagged
+  m_TagString: Component3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2082,7 +2068,7 @@ GameObject:
   - component: {fileID: 1179381390}
   m_Layer: 7
   m_Name: Component3
-  m_TagString: Untagged
+  m_TagString: Component3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2171,14 +2157,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184005658}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0028471856, w: 0.999996}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1660368744}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.326}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 461, y: -11}
@@ -2551,7 +2537,7 @@ GameObject:
   - component: {fileID: 1337053588}
   - component: {fileID: 1337053589}
   m_Layer: 5
-  m_Name: Component1
+  m_Name: GlazeComponents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2600,6 +2586,7 @@ MonoBehaviour:
   - {fileID: 755081388}
   - {fileID: 788159733}
   - {fileID: 1179381388}
+  _timerScript: {fileID: 748336569}
 --- !u!1 &1337906339
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,7 +2692,7 @@ GameObject:
   - component: {fileID: 1422231190}
   m_Layer: 3
   m_Name: Component1
-  m_TagString: Untagged
+  m_TagString: Component1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2914,7 +2901,7 @@ GameObject:
   - component: {fileID: 1660368744}
   - component: {fileID: 1660368745}
   m_Layer: 5
-  m_Name: Component2
+  m_Name: CakeComponents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2963,6 +2950,7 @@ MonoBehaviour:
   - {fileID: 237476912}
   - {fileID: 1779859154}
   - {fileID: 949377146}
+  _timerScript: {fileID: 748336569}
 --- !u!1 &1779859154
 GameObject:
   m_ObjectHideFlags: 0
@@ -2976,7 +2964,7 @@ GameObject:
   - component: {fileID: 1779859156}
   m_Layer: 6
   m_Name: Component2
-  m_TagString: Untagged
+  m_TagString: Component2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

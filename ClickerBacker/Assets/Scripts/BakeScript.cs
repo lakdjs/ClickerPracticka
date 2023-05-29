@@ -8,13 +8,13 @@ public class BakeScript : MonoBehaviour
     [SerializeField] private GameObject[] _components1;
     [SerializeField] private GameObject[] _components2;
     [SerializeField] private GameObject[] _components3;
-
+    [SerializeField] private TimerScript _timerScript;
     public GameObject[] Cake
     {
         get; private set;
     }
-    [SerializeField] private Button _button;
-    private bool SetBaking;
+    [SerializeField] public Button _button;
+    public bool SetBaking;
     private void Start()
     {
         Cake = new GameObject[3];
@@ -23,6 +23,10 @@ public class BakeScript : MonoBehaviour
     }
     private void Update()
     {
+        if(_timerScript.TimerOnOff== false)
+        {
+            _button.interactable = false;
+        }
         if (SetBaking == true)
         {
             _button.interactable = false;

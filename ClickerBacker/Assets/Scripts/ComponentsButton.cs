@@ -8,6 +8,7 @@ public class ComponentsButton : MonoBehaviour
     [SerializeField] private Button _buttonRight;
     [SerializeField] private Button _buttonLeft;
     [SerializeField] private GameObject[] _images;
+    [SerializeField] private TimerScript _timerScript;   
     private int _index;
     private void Start()
     {
@@ -16,6 +17,14 @@ public class ComponentsButton : MonoBehaviour
             _images[i].SetActive(false);
         }
         _images[0].SetActive(true);
+    }
+    private void Update()
+    {
+        if(_timerScript.TimerOnOff == false)
+        {
+            _buttonLeft.interactable = false;
+            _buttonRight.interactable = false;
+        }
     }
     private void Awake()
     {
