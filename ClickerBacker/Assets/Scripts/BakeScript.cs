@@ -33,9 +33,9 @@ public class BakeScript : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.W))
         {
-            Debug.Log(Cake[0].name);
-            Debug.Log(Cake[1].name);
-            Debug.Log(Cake[2].name);
+            Debug.Log(Cake[0]);
+            Debug.Log(Cake[1]);
+            Debug.Log(Cake[2]);
         }
     }
     public void Baking()
