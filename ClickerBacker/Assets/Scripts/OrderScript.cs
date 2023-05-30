@@ -124,9 +124,9 @@ namespace Orders
             CoinsAdd = OrderFields(_coindsAdd, (int)OrderType);
             CoinsSub = OrderFields(_coinsSub, (int)OrderType);
             ClicksQuantity = OrderFields(_clicksQuantity, (int)OrderType);
-            GlazeType = (Glaze)Random.Range(0,(int)Glaze.Component3);
-            CakeType = (Cake)Random.Range(0,(int)Cake.Component3);
-            DecorationType = (Decoration)Random.Range(0,(int)Decoration.Component3);
+            GlazeType = (Glaze)Random.Range(0,(int)Glaze.Component3+1);
+            CakeType = (Cake)Random.Range(0,(int)Cake.Component3+1);
+            DecorationType = (Decoration)Random.Range(0,(int)Decoration.Component3+1);
         }
         private int OrderFields(int smth2, int random)
         {
