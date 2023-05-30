@@ -39,5 +39,9 @@ public class TimerScript : MonoBehaviour
 
             _timeBar.fillAmount = _timeLeft / _maxTime; 
         }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }

@@ -59,7 +59,17 @@ namespace Orders
 
         private void Start()
         {
-            _timerScript = GetComponent<TimerScript>();        
+            _timerScript = GetComponent<TimerScript>();//
+            _timerScript.TimerOnOff = true;
+            NewOrder();
+            _timerScript._maxTime = Time;
+            _timerScript._timeLeft = Time;
+            _bakeScript.SetBaking = false;
+            IsWatched = false;
+            for (int i = 0; i < _buttons.Length; i++)
+            {
+                _buttons[i].interactable = true;
+            }
         }
         void Update()
         {
@@ -69,16 +79,7 @@ namespace Orders
             }
             if(Input.GetKeyDown(KeyCode.E))
             {
-                _timerScript.TimerOnOff = true;
-                NewOrder();
-                _timerScript._maxTime = Time;
-                _timerScript._timeLeft = Time;
-                _bakeScript.SetBaking = false;
-                IsWatched = false;
-                for(int i = 0; i<_buttons.Length; i++)
-                {
-                    _buttons[i].interactable = true;
-                }
+               
             }
             if(Input.GetKeyDown(KeyCode.H))
             {
