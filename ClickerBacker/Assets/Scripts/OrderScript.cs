@@ -61,26 +61,26 @@ namespace Orders
         {
             _timerScript = GetComponent<TimerScript>();        
         }
-        void Update()
+        public void EButtonEmulator()
         {
-            if(Input.GetKeyDown(KeyCode.T))
+            if (Input.GetKeyDown(KeyCode.T))
             {
                 Debug.Log(_timerScript.TimerOnOff);
             }
-            if(Input.GetKeyDown(KeyCode.E))
-            {
+         //   if (Input.GetKeyDown(KeyCode.E))
+          //  {
                 _timerScript.TimerOnOff = true;
                 NewOrder();
                 _timerScript._maxTime = Time;
                 _timerScript._timeLeft = Time;
                 _bakeScript.SetBaking = false;
                 IsWatched = false;
-                for(int i = 0; i<_buttons.Length; i++)
+                for (int i = 0; i < _buttons.Length; i++)
                 {
                     _buttons[i].interactable = true;
                 }
-            }
-            if(Input.GetKeyDown(KeyCode.H))
+        //    }
+            if (Input.GetKeyDown(KeyCode.H))
             {
                 Debug.Log($"ordertype-{OrderType},time-{Time},coinsadd-{CoinsAdd},coinssub-{CoinsSub},glazetype-{GlazeType},caketype-{CakeType},decorationtype-{DecorationType}");
             }
@@ -89,6 +89,10 @@ namespace Orders
                 Debug.Log(PlayerPrefs.GetInt("Coins"));
                 Debug.Log("coins");
             }
+        }
+        void Update()
+        {
+          
            if(_timerScript._timeLeft <= 0&&_timerScript.TimerOnOff&&IsWatched == false)
            {
                 if (_bakeScript.Cake[0] is null)
