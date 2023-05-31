@@ -105,6 +105,7 @@ namespace Orders
                 {
                    OrderResult = (OrderDone)0;
                     PlayerPrefs.SetInt("Coins",PlayerPrefs.GetInt("Coins") + CoinsAdd);
+                    PlayerPrefs.SetInt("OrdersDone", PlayerPrefs.GetInt("OrdersDone") + 1);
                 }
                 else
                 {

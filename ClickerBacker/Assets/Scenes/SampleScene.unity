@@ -2053,6 +2053,7 @@ GameObject:
   - component: {fileID: 748336571}
   - component: {fileID: 748336572}
   - component: {fileID: 748336573}
+  - component: {fileID: 748336574}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2177,7 +2178,7 @@ MonoBehaviour:
   _time: 10
   _coindsAdd: 50
   _coinsSub: 25
-  _clicksQuantity: 15
+  _clicksQuantity: 2
   _bakeScript: {fileID: 720800441}
   _buttons:
   - {fileID: 2099510827}
@@ -2241,6 +2242,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ovenButton: {fileID: 397794889}
+--- !u!114 &748336574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748336564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a23cc6d59f4442f41b423700eedb7179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 0}
+  _firstName: FirstLvlScene
+  _secondName: SecondLvlScene
+  _thirdName: ThirdLvlScene
+  _fourthName: FourthLvlScene
+  _fifthName: FifthLvlScene
 --- !u!1 &755081388
 GameObject:
   m_ObjectHideFlags: 0
@@ -3906,6 +3925,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _button: {fileID: 449872241}
+  _firstName: 
+  _secondName: 
+  _thirdName: 
+  _fourthName: 
+  _fifthName: 
 --- !u!1 &1388872313
 GameObject:
   m_ObjectHideFlags: 0
