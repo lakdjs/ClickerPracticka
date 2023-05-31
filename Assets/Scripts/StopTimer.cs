@@ -5,5 +5,4 @@ using UnityEngine;
 public class StopTimer : MonoBehaviour
 {
     [SerializeField] private TimerScript _timerScript;
-
 }
