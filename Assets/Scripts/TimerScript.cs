@@ -24,12 +24,11 @@ public class TimerScript : MonoBehaviour
         {
             Timer();         
         }
-        //if(Input.GetKeyDown(KeyCode.L))
-        //{
-        //   Debug.Log( _bakeScript.Cake[0]);
-        //   Debug.Log( _bakeScript.Cake[1]);
-        //   Debug.Log( _bakeScript.Cake[2]);
-        //}
+        if(Input.GetKeyDown(KeyCode.L))
+        {
+            Debug.Log(PlayerPrefs.GetInt("OrdersDone"));
+            Debug.Log(PlayerPrefs.GetInt("Lvl"));
+        }
     }
     public void Timer()
     {

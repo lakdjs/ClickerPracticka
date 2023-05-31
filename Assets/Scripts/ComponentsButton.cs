@@ -20,11 +20,11 @@ public class ComponentsButton : MonoBehaviour
     }
     private void Update()
     {
-        if(_timerScript.TimerOnOff == false)
-        {
-            _buttonLeft.interactable = false;
-            _buttonRight.interactable = false;
-        }
+        //if(_timerScript.TimerOnOff == false)
+        //{
+        //    _buttonLeft.interactable = false;
+        //    _buttonRight.interactable = false;
+        //}
     }
     private void Awake()
     {

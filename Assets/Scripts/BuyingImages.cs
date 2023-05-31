@@ -10,7 +10,6 @@ public class BuyingImages : MonoBehaviour
     [SerializeField] private Button _buttonForBuying;
     private void Awake()
     {
-
         PlayerPrefs.SetInt(_imageForBuying.name, 0);
         _buttonForBuying.onClick.AddListener(BuyingImage);
         Debug.Log(_imageForBuying.name);
