@@ -3,16 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Component1
+  - Component2
+  - Component3
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Component1
   - Water
   - UI
-  - 
-  - 
+  - Component2
+  - Component3
   - 
   - 
   - 
