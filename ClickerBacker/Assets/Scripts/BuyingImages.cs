@@ -8,13 +8,19 @@ public class BuyingImages : MonoBehaviour
     [SerializeField] private Image _imageForBuying;
     [SerializeField] private Image _imageLocked;
     [SerializeField] private Button _buttonForBuying;
+    private void Awake()
+    {
+        PlayerPrefs.SetInt(_imageForBuying.name, 0);
+        _buttonForBuying.onClick.AddListener(BuyingImage);
+        Debug.Log(_imageForBuying.name);
+    }
     private void Start()
     {
-        _buttonForBuying.onClick.AddListener(BuyingImage);
+         
     }
     void Update()
     {
-        if(Input.GetKey(KeyCode.I))
+        if (Input.GetKey(KeyCode.I))
         {
             Debug.Log(PlayerPrefs.GetInt(_imageForBuying.name));
         }
