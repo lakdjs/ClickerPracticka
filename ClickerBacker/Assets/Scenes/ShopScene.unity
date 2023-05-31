@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 151958102}
   - component: {fileID: 151958101}
   m_Layer: 5
-  m_Name: ImageBackGround
+  m_Name: ImageBackGround3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 314811777}
   - component: {fileID: 314811776}
   m_Layer: 5
-  m_Name: ImageBackGround
+  m_Name: ImageBackGround2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -701,7 +701,7 @@ GameObject:
   - component: {fileID: 519024019}
   - component: {fileID: 519024018}
   m_Layer: 5
-  m_Name: ImageBackGround
+  m_Name: ImageBackGround6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1128,7 +1128,7 @@ GameObject:
   - component: {fileID: 696991696}
   - component: {fileID: 696991695}
   m_Layer: 5
-  m_Name: ImageBackGround
+  m_Name: ImageBackGround1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2515,7 +2515,7 @@ GameObject:
   - component: {fileID: 1203440267}
   - component: {fileID: 1203440266}
   m_Layer: 5
-  m_Name: ImageBackGround
+  m_Name: ImageBackGround5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2889,7 +2889,7 @@ GameObject:
   - component: {fileID: 1296999848}
   - component: {fileID: 1296999847}
   m_Layer: 5
-  m_Name: ImageBackGround
+  m_Name: ImageBackGround4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4973,7 +4973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1886083667
 RectTransform:
   m_ObjectHideFlags: 0
