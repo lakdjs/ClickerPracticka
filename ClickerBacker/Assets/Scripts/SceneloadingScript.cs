@@ -44,4 +44,9 @@ public class SceneloadingScript : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+    public void ExitMethod()
+    {
+        Debug.Log("Exit");
+        Application.Quit();
+    }
 }
