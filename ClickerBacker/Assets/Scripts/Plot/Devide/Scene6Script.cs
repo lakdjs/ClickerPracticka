@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Scene2Devide : MonoBehaviour
+public class Scene6Script : MonoBehaviour
 {
-    // Start is called before the first frame update
     [SerializeField] private GameObject _buttonOne;
     [SerializeField] private GameObject _buttonTwo;
     [SerializeField] private Text _mainDialog;
@@ -20,9 +19,9 @@ public class Scene2Devide : MonoBehaviour
         _buttonOne.SetActive(false);
         _buttonTwo.SetActive(false);
         _secondButtonText.SetActive(false);
-        imagePartTwo.SetActive(false);
         _thirdButtonText.SetActive(false);
         _finalButton.SetActive(false);
+        imagePartTwo.SetActive(false);
         InvokeRepeating("ChoiceActivation", 2.5f, 0);
     }
     public void ChoiceActivation()
@@ -30,34 +29,35 @@ public class Scene2Devide : MonoBehaviour
         _buttonOne.SetActive(true);
         _buttonTwo.SetActive(true);
     }
-   public void Letter()
+    public void Conitnue()
     {
-        _mainDialog.text = "¬ письме было сказано, что ваша матушка уезжает ненадолго в отпуск, она просит присмотреть за вашим семейной кондитерской, пока еЄ не будет.";
+        _buttonOne.SetActive(false);
+        _buttonTwo.SetActive(false);
+        _finalButton.SetActive(false);
+        _thirdButtonText.SetActive(false);
+        imagePartTwo.SetActive(false);
+        _mainDialog.text = "≈сли вы не продадите ваше заведение в течении 2-ух дней, то кто-то может пострадать. *ѕохититель повесил трубку*";
+        _secondButtonText.SetActive(true);
+    }
+    public void Conitnue2()
+    {
+        _buttonOne.SetActive(false);
+        _buttonTwo.SetActive(false);
+        _finalButton.SetActive(false);
         _secondButtonText.SetActive(false);
+        imagePartTwo.SetActive(false);
+        _mainDialog.text = "¬ы в шоке и не знаете, что делать. Ќо на следующий день нужно продолжать работать.";
         _thirdButtonText.SetActive(true);
     }
-    public void MemoryiesMoment()
+    public void Conitnue3()
     {
-        _mainDialog.text = "¬ы взволнованы, но вспоминаете, как ваша матушка обучала вас.";
+        _buttonOne.SetActive(false);
+        _buttonTwo.SetActive(false);
+        _secondButtonText.SetActive(false);
+        _thirdButtonText.SetActive(false);
         imagePartTwo.SetActive(true);
-        _thirdButtonText.SetActive(!false);
+        _mainDialog.text = "Ќовый день началс€ с плохой новости, кажетс€ вам не приехала часть ингридиентов, но ничего страшного, на складе у вас ещЄ остались запасы. ";
         _finalButton.SetActive(true);
-    }
-    public void ChoiceOne()
-    {
-        PlayerPrefs.SetInt("ChoiceOne", 1); //«апоминаем выбор игрока
-        _mainDialog.text = "¬ы подошли к двери, там сто€л почтальон, он передал вам письмо и вы начали его читать.";
-        _buttonOne.SetActive(false);
-        _buttonTwo.SetActive(false);
-        _secondButtonText.SetActive(true);
-    }
-    public void ChoiceTwo()
-    {
-        PlayerPrefs.SetInt("ChoiceTwo", 2); //«апоминаем выбор игрока
-        _mainDialog.text = "¬ы остались лежать в уютной кровати, встав с неЄ вы увидели, как кто-то просунул письмо под дверь. ¬ы начали его читать.";
-        _buttonOne.SetActive(false);
-        _buttonTwo.SetActive(false);
-        _secondButtonText.SetActive(true);
     }
     public void GoToLevelOne()
     {
@@ -67,6 +67,6 @@ public class Scene2Devide : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Scene2Devide : MonoBehaviour
+public class Scene5Devide : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private GameObject _buttonOne;
@@ -12,16 +12,12 @@ public class Scene2Devide : MonoBehaviour
     [SerializeField] private Text _mainDialog;
 
     [SerializeField] private GameObject _secondButtonText;
-    [SerializeField] private GameObject _thirdButtonText;
     [SerializeField] private GameObject _finalButton;
-    [SerializeField] private GameObject imagePartTwo;
     void Start()
     {
         _buttonOne.SetActive(false);
         _buttonTwo.SetActive(false);
         _secondButtonText.SetActive(false);
-        imagePartTwo.SetActive(false);
-        _thirdButtonText.SetActive(false);
         _finalButton.SetActive(false);
         InvokeRepeating("ChoiceActivation", 2.5f, 0);
     }
@@ -30,31 +26,23 @@ public class Scene2Devide : MonoBehaviour
         _buttonOne.SetActive(true);
         _buttonTwo.SetActive(true);
     }
-   public void Letter()
+    public void Conitnue()
     {
-        _mainDialog.text = "В письме было сказано, что ваша матушка уезжает ненадолго в отпуск, она просит присмотреть за вашим семейной кондитерской, пока её не будет.";
-        _secondButtonText.SetActive(false);
-        _thirdButtonText.SetActive(true);
-    }
-    public void MemoryiesMoment()
-    {
-        _mainDialog.text = "Вы взволнованы, но вспоминаете, как ваша матушка обучала вас.";
-        imagePartTwo.SetActive(true);
-        _thirdButtonText.SetActive(!false);
+        _mainDialog.text = "Новый день – новые тортики.";
         _finalButton.SetActive(true);
     }
     public void ChoiceOne()
     {
-        PlayerPrefs.SetInt("ChoiceOne", 1); //Запоминаем выбор игрока
-        _mainDialog.text = "Вы подошли к двери, там стоял почтальон, он передал вам письмо и вы начали его читать.";
+        PlayerPrefs.SetInt("ChoiceThree", 3); //Запоминаем выбор игрока
+        _mainDialog.text = "Вы ответили на письмо.";
         _buttonOne.SetActive(false);
         _buttonTwo.SetActive(false);
         _secondButtonText.SetActive(true);
     }
     public void ChoiceTwo()
     {
-        PlayerPrefs.SetInt("ChoiceTwo", 2); //Запоминаем выбор игрока
-        _mainDialog.text = "Вы остались лежать в уютной кровати, встав с неё вы увидели, как кто-то просунул письмо под дверь. Вы начали его читать.";
+        PlayerPrefs.SetInt("ChoiceFour", 4); //Запоминаем выбор игрока
+        _mainDialog.text = "Вы очень устали и решили ответить письмо попозже.";
         _buttonOne.SetActive(false);
         _buttonTwo.SetActive(false);
         _secondButtonText.SetActive(true);

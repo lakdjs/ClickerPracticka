@@ -207,9 +207,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519321939}
-        m_TargetAssemblyTypeName: Scene2Devide, Assembly-CSharp
-        m_MethodName: ChoiceOne
+      - m_Target: {fileID: 519321941}
+        m_TargetAssemblyTypeName: Scene6Script, Assembly-CSharp
+        m_MethodName: Conitnue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -409,8 +409,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519321939}
-        m_TargetAssemblyTypeName: Scene2Devide, Assembly-CSharp
+      - m_Target: {fileID: 519321941}
+        m_TargetAssemblyTypeName: Scene6Script, Assembly-CSharp
         m_MethodName: GoToLevelOne
         m_Mode: 1
         m_Arguments:
@@ -552,8 +552,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2089804800}
-  - {fileID: 619237382}
   - {fileID: 263274997}
+  - {fileID: 1440071891}
   - {fileID: 831453330}
   - {fileID: 808503276}
   - {fileID: 1939223450}
@@ -600,7 +600,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 250323952}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.10133334}
@@ -740,7 +740,7 @@ GameObject:
   - component: {fileID: 519321937}
   - component: {fileID: 519321938}
   - component: {fileID: 519321940}
-  - component: {fileID: 519321939}
+  - component: {fileID: 519321941}
   m_Layer: 0
   m_Name: MainController
   m_TagString: Untagged
@@ -776,25 +776,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _adviseText: {fileID: 263274996}
---- !u!114 &519321939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519321936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b891543f650b034b801cbfd8265328c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _buttonOne: {fileID: 39760503}
-  _buttonTwo: {fileID: 631794103}
-  _mainDialog: {fileID: 808503277}
-  _secondButtonText: {fileID: 1939223449}
-  _thirdButtonText: {fileID: 1870079838}
-  _finalButton: {fileID: 200590548}
-  imagePartTwo: {fileID: 619237381}
 --- !u!114 &519321940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -807,82 +788,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81492586fa532d846963120e7e943ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &619237381
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 619237382}
-  - component: {fileID: 619237384}
-  - component: {fileID: 619237383}
-  m_Layer: 5
-  m_Name: TeachCooking
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &619237382
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619237381}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 250323952}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.2512207, y: 0.0021972656}
-  m_SizeDelta: {x: 0.5, y: 0.010009766}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &619237383
+--- !u!114 &519321941
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619237381}
+  m_GameObject: {fileID: 519321936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 76d0636188f2074458948d37b1d03d17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d3f4bb07a9a70ea4db04dcaf356a3e01, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &619237384
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619237381}
-  m_CullTransparentMesh: 1
+  _buttonOne: {fileID: 39760503}
+  _buttonTwo: {fileID: 631794103}
+  _mainDialog: {fileID: 808503277}
+  _secondButtonText: {fileID: 1939223449}
+  _thirdButtonText: {fileID: 1870079838}
+  _finalButton: {fileID: 200590548}
+  imagePartTwo: {fileID: 1440071890}
 --- !u!1 &631794103
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,9 +891,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519321939}
-        m_TargetAssemblyTypeName: Scene2Devide, Assembly-CSharp
-        m_MethodName: ChoiceTwo
+      - m_Target: {fileID: 519321941}
+        m_TargetAssemblyTypeName: Scene6Script, Assembly-CSharp
+        m_MethodName: Conitnue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1168,11 +1092,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0412 \u043E\u0434\u0438\u043D \u043F\u0440\u0435\u043A\u0440\u0430\u0441\u043D\u044B\u0439
-    \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0439 \u0434\u0435\u043D\u044C,
-    \u0432\u044B \u043F\u0440\u043E\u0441\u044B\u043F\u0430\u0435\u0442\u0435\u0441\u044C
-    \u0432 \u0441\u0432\u043E\u0451\u043C \u0434\u043E\u043C\u0435 \u0438 \u0441\u043B\u044B\u0448\u0438\u0442\u0435
-    \u0441\u0442\u0443\u043A \u0432 \u0434\u0432\u0435\u0440\u044C."
+  m_Text: "\u0412\u043D\u0435\u0437\u0430\u043F\u043D\u043E \u0432\u0430\u043C \u0440\u0430\u0437\u0434\u0430\u0451\u0442\u0441\u044F
+    \u0437\u0432\u043E\u043D\u043E\u043A. \u041C\u044B \u043F\u043E\u0445\u0438\u0442\u0438\u043B\u0438
+    \u0432\u0430\u0448\u0443 \u043F\u0448\u0448\u2026 \u0412\u044B \u0448\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u043D\u044B"
 --- !u!222 &808503278
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1328,7 +1250,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u0434\u0435\u043B\u0430\u0442\u044C"
+  m_Text: "\u042D\u0442\u043E \u043F\u0440\u0438\u043A\u043E\u043B?"
 --- !u!222 &1334530038
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1336,6 +1258,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334530035}
+  m_CullTransparentMesh: 1
+--- !u!1 &1440071890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1440071891}
+  - component: {fileID: 1440071893}
+  - component: {fileID: 1440071892}
+  m_Layer: 5
+  m_Name: Rest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1440071891
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440071890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 250323952}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.0025024414, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1440071892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440071890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4844b6d7ea14410469678e9b62d39482, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1440071893
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440071890}
   m_CullTransparentMesh: 1
 --- !u!1 &1629872188
 GameObject:
@@ -1484,9 +1482,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519321939}
-        m_TargetAssemblyTypeName: Scene2Devide, Assembly-CSharp
-        m_MethodName: MemoryiesMoment
+      - m_Target: {fileID: 519321941}
+        m_TargetAssemblyTypeName: Scene6Script, Assembly-CSharp
+        m_MethodName: Conitnue3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1706,8 +1704,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C, \u043A\u0442\u043E
-    \u043F\u0440\u0438\u0448\u0451\u043B"
+  m_Text: "\u041A\u0442\u043E \u0432\u044B?"
 --- !u!222 &1939090633
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1800,9 +1797,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519321939}
-        m_TargetAssemblyTypeName: Scene2Devide, Assembly-CSharp
-        m_MethodName: Letter
+      - m_Target: {fileID: 519321941}
+        m_TargetAssemblyTypeName: Scene6Script, Assembly-CSharp
+        m_MethodName: Conitnue2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
