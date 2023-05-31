@@ -58,7 +58,7 @@ public class BakeScript : MonoBehaviour
         }
        
        _timerScript._timeLeft = 0;//
-       _timerScript.TimerOnOff =true;//
+       _timerScript.TimerOnOff = true;//
        _orderScript.IsWatched = false; 
         SetBaking = true;
     }

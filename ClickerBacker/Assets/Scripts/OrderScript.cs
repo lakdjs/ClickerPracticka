@@ -112,7 +112,7 @@ namespace Orders
                     PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") - CoinsSub);
                 }
                 IsWatched = true;
-                _timerScript.TimerOnOff = false;
+               // _timerScript.TimerOnOff = false;
                 Debug.Log(OrderResult);
             }
         }
