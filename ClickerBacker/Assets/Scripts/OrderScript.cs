@@ -101,7 +101,7 @@ namespace Orders
                 }
                 if (GlazeType.ToString() == _bakeScript.Cake[0].tag.ToString()&&
                    CakeType.ToString()==_bakeScript.Cake[1].tag.ToString()&&
-                   DecorationType.ToString()==_bakeScript.Cake[2].tag.ToString())
+                   DecorationType.ToString()==_bakeScript.Cake[2].tag.ToString()&& PlayerPrefs.GetInt("ClicksDone") >= ClicksQuantity)
                 {
                    OrderResult = (OrderDone)0;
                     PlayerPrefs.SetInt("Coins",PlayerPrefs.GetInt("Coins") + CoinsAdd);
