@@ -33,7 +33,6 @@ public class TimerScript : MonoBehaviour
 }
     void Update()
     {
-        Debug.Log(x);
         if(TimerOnOff)
         {
             Timer();         
