@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 46789654}
   - component: {fileID: 46789653}
   m_Layer: 5
-  m_Name: ImageBackGround
+  m_Name: ImageBackGround7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -328,6 +328,7 @@ MonoBehaviour:
   _imageForBuying: {fileID: 519024018}
   _imageLocked: {fileID: 1012456710}
   _buttonForBuying: {fileID: 643888421}
+  _button: {fileID: 643888420}
 --- !u!1 &314811774
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +514,7 @@ RectTransform:
   - {fileID: 1397294978}
   - {fileID: 2035801739}
   - {fileID: 1012456712}
+  - {fileID: 456282977}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -549,6 +551,68 @@ MonoBehaviour:
   - {fileID: 942550125}
   - {fileID: 541606871}
   _timerScript: {fileID: 0}
+--- !u!1 &456282976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 456282977}
+  - component: {fileID: 456282978}
+  m_Layer: 5
+  m_Name: ButtonsDeleter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &456282977
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456282976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 371271800}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &456282978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456282976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24368633ed6309f489e92c48a5213e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _image:
+  - {fileID: 1599384983}
+  - {fileID: 589154545}
+  - {fileID: 1886083665}
+  - {fileID: 1378739875}
+  - {fileID: 1081782059}
+  - {fileID: 194689596}
+  - {fileID: 1635587314}
+  - {fileID: 1252018339}
+  - {fileID: 998561251}
+  - {fileID: 881769646}
+  - {fileID: 942550125}
+  - {fileID: 541606871}
 --- !u!1 &519024016
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,6 +877,7 @@ MonoBehaviour:
   _imageForBuying: {fileID: 1520077332}
   _imageLocked: {fileID: 1012456710}
   _buttonForBuying: {fileID: 643888421}
+  _button: {fileID: 643888420}
 --- !u!1 &589154545
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,6 +931,7 @@ MonoBehaviour:
   _imageForBuying: {fileID: 314811776}
   _imageLocked: {fileID: 1012456710}
   _buttonForBuying: {fileID: 643888421}
+  _button: {fileID: 643888420}
 --- !u!1 &643888420
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +1008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -985,7 +1051,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -402.52353}
+  m_AnchoredPosition: {x: -854, y: -402.52353}
   m_SizeDelta: {x: 160, y: 70.9529}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &696991693
@@ -1076,7 +1142,7 @@ GameObject:
   - component: {fileID: 701539390}
   - component: {fileID: 701539389}
   m_Layer: 5
-  m_Name: ImageBackGround
+  m_Name: ImageBackGround8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1316,7 +1382,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881769646}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1345,6 +1411,7 @@ MonoBehaviour:
   _imageForBuying: {fileID: 2049863110}
   _imageLocked: {fileID: 1012456710}
   _buttonForBuying: {fileID: 643888421}
+  _button: {fileID: 643888420}
 --- !u!1 &942550125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,6 +1465,7 @@ MonoBehaviour:
   _imageForBuying: {fileID: 2097855016}
   _imageLocked: {fileID: 1012456710}
   _buttonForBuying: {fileID: 643888421}
+  _button: {fileID: 643888420}
 --- !u!1 &998561251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,6 +1519,7 @@ MonoBehaviour:
   _imageForBuying: {fileID: 1469490305}
   _imageLocked: {fileID: 1012456710}
   _buttonForBuying: {fileID: 643888421}
+  _button: {fileID: 643888420}
 --- !u!1 &1012456709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,6 +1649,7 @@ MonoBehaviour:
   _imageForBuying: {fileID: 1203440266}
   _imageLocked: {fileID: 1012456710}
   _buttonForBuying: {fileID: 643888421}
+  _button: {fileID: 643888420}
 --- !u!1 &1203440264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,6 +1779,7 @@ MonoBehaviour:
   _imageForBuying: {fileID: 701539389}
   _imageLocked: {fileID: 1012456710}
   _buttonForBuying: {fileID: 643888421}
+  _button: {fileID: 643888420}
 --- !u!1 &1296999845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,6 +1909,7 @@ MonoBehaviour:
   _imageForBuying: {fileID: 1296999847}
   _imageLocked: {fileID: 1012456710}
   _buttonForBuying: {fileID: 643888421}
+  _button: {fileID: 643888420}
 --- !u!1 &1397294974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,7 +2043,7 @@ GameObject:
   - component: {fileID: 1469490306}
   - component: {fileID: 1469490305}
   m_Layer: 5
-  m_Name: ImageBackGround
+  m_Name: ImageBackGround9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2047,7 +2119,7 @@ GameObject:
   - component: {fileID: 1520077333}
   - component: {fileID: 1520077332}
   m_Layer: 5
-  m_Name: ImageBackGround
+  m_Name: ImageBackGround12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2164,6 +2236,7 @@ MonoBehaviour:
   _imageForBuying: {fileID: 696991695}
   _imageLocked: {fileID: 1012456710}
   _buttonForBuying: {fileID: 643888421}
+  _button: {fileID: 643888420}
 --- !u!1 &1635587314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2217,6 +2290,7 @@ MonoBehaviour:
   _imageForBuying: {fileID: 46789653}
   _imageLocked: {fileID: 1012456710}
   _buttonForBuying: {fileID: 643888421}
+  _button: {fileID: 643888420}
 --- !u!1 &1886083665
 GameObject:
   m_ObjectHideFlags: 0
@@ -2270,6 +2344,7 @@ MonoBehaviour:
   _imageForBuying: {fileID: 151958101}
   _imageLocked: {fileID: 1012456710}
   _buttonForBuying: {fileID: 643888421}
+  _button: {fileID: 643888420}
 --- !u!1 &2035801735
 GameObject:
   m_ObjectHideFlags: 0
@@ -2403,7 +2478,7 @@ GameObject:
   - component: {fileID: 2049863111}
   - component: {fileID: 2049863110}
   m_Layer: 5
-  m_Name: ImageBackGround
+  m_Name: ImageBackGround10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2556,7 +2631,7 @@ GameObject:
   - component: {fileID: 2097855017}
   - component: {fileID: 2097855016}
   m_Layer: 5
-  m_Name: ImageBackGround
+  m_Name: ImageBackGround11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
