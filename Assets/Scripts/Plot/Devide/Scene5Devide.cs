@@ -33,7 +33,7 @@ public class Scene5Devide : MonoBehaviour
     }
     public void ChoiceOne()
     {
-        PlayerPrefs.SetInt("ChoiceThree", 3); //Запоминаем выбор игрока
+        PlayerPrefs.SetInt("ChoiceTwo", 1); //Запоминаем выбор игрока
         _mainDialog.text = "Вы ответили на письмо.";
         _buttonOne.SetActive(false);
         _buttonTwo.SetActive(false);
@@ -41,7 +41,7 @@ public class Scene5Devide : MonoBehaviour
     }
     public void ChoiceTwo()
     {
-        PlayerPrefs.SetInt("ChoiceFour", 4); //Запоминаем выбор игрока
+        PlayerPrefs.SetInt("ChoiceTwo", 2); //Запоминаем выбор игрока
         _mainDialog.text = "Вы очень устали и решили ответить письмо попозже.";
         _buttonOne.SetActive(false);
         _buttonTwo.SetActive(false);

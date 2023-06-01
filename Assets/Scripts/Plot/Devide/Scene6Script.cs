@@ -31,6 +31,7 @@ public class Scene6Script : MonoBehaviour
     }
     public void Conitnue()
     {
+        PlayerPrefs.SetInt("ChoiceThree", 1);
         _buttonOne.SetActive(false);
         _buttonTwo.SetActive(false);
         _finalButton.SetActive(false);
@@ -41,6 +42,7 @@ public class Scene6Script : MonoBehaviour
     }
     public void Conitnue2()
     {
+        PlayerPrefs.SetInt("ChoiceThree", 2);
         _buttonOne.SetActive(false);
         _buttonTwo.SetActive(false);
         _finalButton.SetActive(false);

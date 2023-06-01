@@ -11,6 +11,11 @@ public class SceneSelectorForPlot : MonoBehaviour
     {
         
     }
+    public void GoToLevel()
+    {
+        Debug.Log("Going to level");
+        SceneManager.LoadScene("SampleScene");
+    }
    public void goToSceneOne()
     {
         Debug.Log("Going to plot scene one");

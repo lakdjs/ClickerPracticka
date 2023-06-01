@@ -53,7 +53,7 @@ public class Scene2Devide : MonoBehaviour
     }
     public void ChoiceTwo()
     {
-        PlayerPrefs.SetInt("ChoiceTwo", 2); //Запоминаем выбор игрока
+        PlayerPrefs.SetInt("ChoiceOne", 2); //Запоминаем выбор игрока
         _mainDialog.text = "Вы остались лежать в уютной кровати, встав с неё вы увидели, как кто-то просунул письмо под дверь. Вы начали его читать.";
         _buttonOne.SetActive(false);
         _buttonTwo.SetActive(false);
