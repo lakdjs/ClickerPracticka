@@ -17,27 +17,32 @@ public class SceneloadingScript : MonoBehaviour
         if(PlayerPrefs.GetInt("OrdersDone")==3&&PlayerPrefs.GetInt("Lvl")==0)
         {
             PlayerPrefs.SetInt("Lvl", PlayerPrefs.GetInt("Lvl") + 1);
-            SceneLoadMethod(_firstName);
+            SceneLoadMethod("Scene3");
         }
         if (PlayerPrefs.GetInt("OrdersDone") == 6 && PlayerPrefs.GetInt("Lvl") == 1)
         {
             PlayerPrefs.SetInt("Lvl", PlayerPrefs.GetInt("Lvl") + 1);
-            SceneLoadMethod(_secondName);
+            SceneLoadMethod("Scene4");
         }
         if (PlayerPrefs.GetInt("OrdersDone") == 9 && PlayerPrefs.GetInt("Lvl") == 2)
         {
             PlayerPrefs.SetInt("Lvl", PlayerPrefs.GetInt("Lvl") + 1);
-            SceneLoadMethod(_thirdName);
+            SceneLoadMethod("Scene4");
         }
         if (PlayerPrefs.GetInt("OrdersDone") == 12 && PlayerPrefs.GetInt("Lvl") == 3)
         {
             PlayerPrefs.SetInt("Lvl", PlayerPrefs.GetInt("Lvl") + 1);
-            SceneLoadMethod(_fourthName);
+            SceneLoadMethod("Scene5");
         }
         if (PlayerPrefs.GetInt("OrdersDone") == 15 && PlayerPrefs.GetInt("Lvl") == 4)
         {
             PlayerPrefs.SetInt("Lvl", PlayerPrefs.GetInt("Lvl") + 1);
-            SceneLoadMethod(_fifthName);
+            SceneLoadMethod("Scene6");
+        }
+        if (PlayerPrefs.GetInt("OrdersDone") == 6 && PlayerPrefs.GetInt("Lvl") == 5)
+        {
+            PlayerPrefs.SetInt("Lvl", PlayerPrefs.GetInt("Lvl") + 1);
+            SceneLoadMethod("Scene7");
         }
     }
     public void SceneLoadMethod(string sceneName)
