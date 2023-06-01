@@ -200,6 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 27117280}
+  - component: {fileID: 27117281}
   m_Layer: 5
   m_Name: GlazeComponents
   m_TagString: Untagged
@@ -232,6 +233,25 @@ RectTransform:
   m_AnchoredPosition: {x: 1.6411133, y: 5.0772705}
   m_SizeDelta: {x: 0.44207764, y: 8.8645}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &27117281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27117279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba498269b3868b4aad765251295df3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonRight: {fileID: 2099510827}
+  _buttonLeft: {fileID: 1937996629}
+  _images:
+  - {fileID: 755081388}
+  - {fileID: 788159733}
+  - {fileID: 1179381388}
+  _timerScript: {fileID: 748336569}
 --- !u!1 &124899314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,6 +1442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 580333671}
+  - component: {fileID: 580333672}
   m_Layer: 5
   m_Name: CakeComponents
   m_TagString: Untagged
@@ -1454,6 +1475,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0.42004395, y: -0.730011}
   m_SizeDelta: {x: -0.80999756, y: 1.8099976}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &580333672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580333670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba498269b3868b4aad765251295df3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonRight: {fileID: 1184005660}
+  _buttonLeft: {fileID: 761241919}
+  _images:
+  - {fileID: 237476912}
+  - {fileID: 1779859154}
+  - {fileID: 949377146}
+  _timerScript: {fileID: 748336569}
 --- !u!1 &617438954
 GameObject:
   m_ObjectHideFlags: 0
@@ -2700,6 +2740,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 994132383}
+  - component: {fileID: 994132384}
   m_Layer: 5
   m_Name: DecorationComponents
   m_TagString: Untagged
@@ -2732,6 +2773,25 @@ RectTransform:
   m_AnchoredPosition: {x: -0.20007324, y: 0.6835022}
   m_SizeDelta: {x: -4.8499756, y: 1.8110046}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &994132384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994132382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba498269b3868b4aad765251295df3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonRight: {fileID: 1864153708}
+  _buttonLeft: {fileID: 1267071500}
+  _images:
+  - {fileID: 1422231188}
+  - {fileID: 440975488}
+  - {fileID: 1175079519}
+  _timerScript: {fileID: 748336569}
 --- !u!1 &1084290250
 GameObject:
   m_ObjectHideFlags: 0
