@@ -11,14 +11,15 @@ public class BuyingImages : MonoBehaviour
     [SerializeField] public GameObject _button;
     private void Awake()
     {
-        _buttonForBuying.onClick.AddListener(BuyingImage);
+        
     }
     private void Start()
     {
          
     }
     void Update()
-    {   
+    {
+        _buttonForBuying.onClick.AddListener(BuyingImage);
         if (Input.GetKey(KeyCode.I))
         {
             Debug.Log(PlayerPrefs.GetInt(_imageForBuying.name));

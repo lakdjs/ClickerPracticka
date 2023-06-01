@@ -14,10 +14,6 @@ public class ButtonDeleter : MonoBehaviour
            {
                _image[i].GetComponent<BuyingImages>()._buttonForBuying.onClick.RemoveAllListeners();
            }
-            else
-            {
-                _image[i].GetComponent<BuyingImages>()._buttonForBuying.onClick.AddListener(_image[i].GetComponent<BuyingImages>().BuyingImage);
-            }
         }
     }
 }
