@@ -8,6 +8,8 @@ public class Tutorial : MonoBehaviour
     [SerializeField] private GameObject _buttonOne;
     [SerializeField] private GameObject _buttonTwo;
     [SerializeField] private GameObject _buttonThree;
+
+
     // Start is called before the first frame update
     void Start()
     {

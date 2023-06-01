@@ -62,7 +62,7 @@ public class Scene2Devide : MonoBehaviour
     public void GoToLevelOne()
     {
         Debug.Log("GoToLevel 1");
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("TutorialScene");
     }
     // Update is called once per frame
     void Update()
