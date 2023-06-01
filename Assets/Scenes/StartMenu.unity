@@ -2320,7 +2320,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Here will be title
+  m_Text: The Sweetest Desert
 --- !u!222 &1590860565
 CanvasRenderer:
   m_ObjectHideFlags: 0
