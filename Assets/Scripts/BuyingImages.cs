@@ -9,9 +9,10 @@ public class BuyingImages : MonoBehaviour
     [SerializeField] private Image _imageLocked;
     [SerializeField] public Button _buttonForBuying;
     [SerializeField] public GameObject _button;
+     private int _price;
     private void Awake()
     {
-        
+        _price = 2200;
     }
     private void Start()
     {
@@ -37,7 +38,11 @@ public class BuyingImages : MonoBehaviour
     }
     public void BuyingImage()
     {
-        Debug.Log("Bought");
-        PlayerPrefs.SetInt(_imageForBuying.name,1);
+        if(PlayerPrefs.GetInt("Coins")>=_price)
+        {
+            Debug.Log("Bought");
+            PlayerPrefs.SetInt(_imageForBuying.name, 1);
+            PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") - _price);
+        }
     }
 }

@@ -62,11 +62,18 @@ public class TimerScript : MonoBehaviour
     }
     private void StopingTimer()
     {
-        PlayerPrefs.SetInt("Coins",PlayerPrefs.GetInt("Coins")-1000);
-        _timeStoped = true;
-        InvokeRepeating("TimerSeconds",1,1);
-        _surpriseBox.GetComponent<Image>().enabled = false;
-        _surpriseBox.enabled = false;
+        if(PlayerPrefs.GetInt("Coins")>=1000)
+        {
+            PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") - 1000);
+            _timeStoped = true;
+            InvokeRepeating("TimerSeconds", 1, 1);
+            _surpriseBox.GetComponent<Image>().enabled = false;
+            _surpriseBox.enabled = false;
+        }
+        else
+        {
+
+        }
     }
     private void TimerSeconds()
     {
