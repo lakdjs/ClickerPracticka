@@ -224,10 +224,10 @@ RectTransform:
   m_Father: {fileID: 250323952}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0025024414, y: 0}
-  m_SizeDelta: {x: 1360, y: 678}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.0007324219, y: 0}
+  m_SizeDelta: {x: -2, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &80647935
 MonoBehaviour:
@@ -407,10 +407,10 @@ RectTransform:
   m_Father: {fileID: 250323952}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.10133334}
-  m_AnchoredPosition: {x: -0.25634766, y: -0.84472656}
-  m_SizeDelta: {x: 0.5, y: -1.6893921}
+  m_AnchorMin: {x: 0.08331249, y: 0}
+  m_AnchorMax: {x: 0.93000007, y: 0.13877779}
+  m_AnchoredPosition: {x: -2.9094238, y: 0.97998047}
+  m_SizeDelta: {x: 3.2599945, y: 1.9599991}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &263274998
 MonoBehaviour:
@@ -463,6 +463,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 519321937}
+  - component: {fileID: 519321938}
   m_Layer: 0
   m_Name: MainController
   m_TagString: Untagged
@@ -485,6 +486,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519321938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519321936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81492586fa532d846963120e7e943ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &557098182
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,9 +582,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene3Script, Assembly-CSharp
-        m_MethodName: GoToLevel
+      - m_Target: {fileID: 519321938}
+        m_TargetAssemblyTypeName: SceneSelectorForPlot, Assembly-CSharp
+        m_MethodName: goToSceneEight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -690,7 +703,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &582103511
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -732,10 +745,10 @@ RectTransform:
   m_Father: {fileID: 250323952}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.031735677, y: 0}
-  m_AnchorMax: {x: 0.97, y: 0.1415015}
-  m_AnchoredPosition: {x: 9.302795, y: -13.595764}
-  m_SizeDelta: {x: -68.958496, y: -7.5133057}
+  m_AnchorMin: {x: 0.08331249, y: 0}
+  m_AnchorMax: {x: 0.93000007, y: 0.13877779}
+  m_AnchoredPosition: {x: -2.9301758, y: 1}
+  m_SizeDelta: {x: 4.498398, y: 1.9999542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &808503277
 MonoBehaviour:
@@ -817,10 +830,10 @@ RectTransform:
   m_Father: {fileID: 250323952}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.031735677, y: 0}
-  m_AnchorMax: {x: 0.97, y: 0.1415015}
-  m_AnchoredPosition: {x: -1.0050049, y: -9.838623}
-  m_SizeDelta: {x: 4, y: 22.312805}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.1734445}
+  m_AnchoredPosition: {x: -0.10986328, y: -0.34399414}
+  m_SizeDelta: {x: -2.9789963, y: -0.68720055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &831453331
 MonoBehaviour:
@@ -1005,7 +1018,7 @@ GameObject:
   - component: {fileID: 1126480786}
   - component: {fileID: 1126480785}
   m_Layer: 0
-  m_Name: John Deley and the 41 Players - Ersatz Bossa
+  m_Name: BackgroundMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1193,7 +1206,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &1402600988
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1319,10 +1332,10 @@ RectTransform:
   m_Father: {fileID: 250323952}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0025024414, y: 0}
-  m_SizeDelta: {x: 1360, y: 678}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.00024414062, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2089804801
 MonoBehaviour:
