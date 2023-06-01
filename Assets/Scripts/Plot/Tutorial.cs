@@ -9,6 +9,7 @@ public class Tutorial : MonoBehaviour
     [SerializeField] private GameObject _buttonTwo;
     [SerializeField] private GameObject _buttonThree;
 
+    public GameObject[] black;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,13 @@ public class Tutorial : MonoBehaviour
         _buttonOne.SetActive(true);
         _buttonTwo.SetActive(false);
         _buttonThree.SetActive(false);
+        black[0].SetActive(true);
+        black[1].SetActive(true);
+        black[2].SetActive(false);
+        black[3].SetActive(false);
+        black[4].SetActive(false);
+        black[5].SetActive(false);
+        black[6].SetActive(false);
     }
 
     // Update is called once per frame
@@ -24,6 +32,13 @@ public class Tutorial : MonoBehaviour
         _buttonOne.SetActive(false);
         _buttonTwo.SetActive(true);
         _buttonThree.SetActive(false);
+        black[0].SetActive(false);
+        black[1].SetActive(false);
+        black[2].SetActive(true);
+        black[3].SetActive(true);
+        black[4].SetActive(false);
+        black[5].SetActive(false);
+        black[6].SetActive(false);
     }
 
     public void StateThree()
@@ -31,6 +46,13 @@ public class Tutorial : MonoBehaviour
         _buttonOne.SetActive(false);
         _buttonTwo.SetActive(false);
         _buttonThree.SetActive(true);
+        black[0].SetActive(false);
+        black[1].SetActive(false);
+        black[2].SetActive(false);
+        black[3].SetActive(false);
+        black[4].SetActive(true);
+        black[5].SetActive(true);
+        black[6].SetActive(true);
     }
 
     public void GoToLevel()
