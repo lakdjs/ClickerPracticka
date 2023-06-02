@@ -13,6 +13,6 @@ public class CoinsScript : MonoBehaviour
     }
     private void CoinsDebug()
     {
-        _text.text = $"coins:{PlayerPrefs.GetInt("Coins")}";
+        _text.text = $"Scores:{PlayerPrefs.GetInt("Coins")}";
     }
 }

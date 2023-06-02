@@ -27,22 +27,22 @@ public class SceneloadingScript : MonoBehaviour
         if (PlayerPrefs.GetInt("OrdersDone") == 9 && PlayerPrefs.GetInt("Lvl") == 2)
         {
             PlayerPrefs.SetInt("Lvl", PlayerPrefs.GetInt("Lvl") + 1);
-            SceneLoadMethod("Scene4");
+            SceneLoadMethod("Scene5");
         }
         if (PlayerPrefs.GetInt("OrdersDone") == 12 && PlayerPrefs.GetInt("Lvl") == 3)
         {
             PlayerPrefs.SetInt("Lvl", PlayerPrefs.GetInt("Lvl") + 1);
-            SceneLoadMethod("Scene5");
+            SceneLoadMethod("Scene6");
         }
         if (PlayerPrefs.GetInt("OrdersDone") == 15 && PlayerPrefs.GetInt("Lvl") == 4)
         {
             PlayerPrefs.SetInt("Lvl", PlayerPrefs.GetInt("Lvl") + 1);
-            SceneLoadMethod("Scene6");
+            SceneLoadMethod("Scene7");
         }
         if (PlayerPrefs.GetInt("OrdersDone") == 6 && PlayerPrefs.GetInt("Lvl") == 5)
         {
-            PlayerPrefs.SetInt("Lvl", PlayerPrefs.GetInt("Lvl") + 1);
-            SceneLoadMethod("Scene7");
+         //   PlayerPrefs.SetInt("Lvl", PlayerPrefs.GetInt("Lvl") + 1);
+          //  SceneLoadMethod("Scene7");
         }
     }
     public void SceneLoadMethod(string sceneName)
